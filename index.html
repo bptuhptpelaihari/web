@@ -26,6 +26,42 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <!-- Template Flying Object --> 
+<script type="text/javascript" src="http://www.dynamicdrive.com/dynamicindex4/moveobj.js"> </script>
+<script type="text/javascript">
+
+/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script>
 
   <!-- =======================================================
   * Template Name: Groovin
@@ -52,28 +88,30 @@
 		  <li><a class="nav-link scrollto" href="index.html"><i class="bi bi-house-heart-fill" style="font-size:24px"></i></a></li>
 		  <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="profil-sejarah.html">Sejarah Singkat</a></li>
-              <li><a href="profil-visimisi.html">Visi dan Misi</a></li>
-              <li><a href="profil-tupoksi.html">Tugas dan Fungsi</a></li>
-              <li><a href="profil-maklumat">Maklumat Pelayanan</a></li>
-			  <li><a href="profil-struktur.html">Struktur Organisasi</a></li>
+              <li><a href="sejarah.html">Sejarah Singkat</a></li>
+              <li><a href="visi-misi.html">Visi dan Misi</a></li>
+              <li><a href="tupoksi.html">Tugas dan Fungsi</a></li>
+			  <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
 			  <li><a href="profil-pegawai.html">Profil Pegawai</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="produk.html">Layanan Penjualan</a></li>
-              <li><a href="Layanan.html">Layanan Masyarakat</a></li>
+              <li><a href="layanan.html">Layanan Masyarakat</a></li>
+			  <li><hr></li>
+			  <li><a href="maklumat.html">> Kebijakan Mutu <br>> Maklumat Pelayanan <br>> Janji Layanan</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Informasi Publik</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="pub-terkini.html">Publikasi Terkini</a></li>
+              <li><a href="publikasi-terkini.html">Publikasi Terkini</a></li>
 			  <li><a href="https://sirup.lkpp.go.id/sirup/home/penyediasatker?idSatker=5536" target="_blank">Rencana Umum Pengadaan</a></li>
 			  <li><hr></li>
 			  <li><a href="https://sigap-upg.pertanian.go.id" target="_blank">SiGAP-UPG</a></li>
               <li><a href="https://jdih.pertanian.go.id/fp/peraturan" target="_blank">Peraturan Menteri Pertanian</a></li>
               <li><a href="tarif-PNBP.html">Tarif PNBP</a></li>
+			  <li><a href="https://casn.pertanian.go.id/" target="_blank">Rekrutmen Pegawai</a></li>
 			  <li style="background-color:#E5E5E5"><a href="https://bptupelaihari-ppid.pertanian.go.id"><Strong style="color:#FF6600"> - Portal PPID >></Strong></a></li>
 			  <li class="dropdown"><a><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -104,14 +142,15 @@
 			  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/regulasi" target="_blank">Regulasi</a></li>
             </ul>
           </li>
+		  <li><a class="nav-link scrollto" href="aplikasi.html"><strong class="bi bi-amd">-plikasi</strong></a></li>
 		  <li class="dropdown"><a href="#"><span>Siap<strong style="color:#FF6600">.Siaga</strong></span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="https://covid19.go.id/id/situasi" target="_blank">Siaga Covid-19</a></li>
               <li><a href="https://siagapmk.crisis-center.id/" target="_blank">Siaga PMK</a></li>
             </ul>
           </li>
-		  <li><a class="nav-link scrollto" href="aplikasi.html"><strong class="bi bi-amd">-plikasi</strong></a></li>
-          <li><a class="getstarted scrollto" href="#footer">Hubungi Kami<i class="bi bi-whatsapp"></i></a></li>
+		  <li><a class="nav-link scrollto" href="#footer">Kontak</a></li>
+          <li><a class="getstarted scrollto" href="https://wa.me/6282272433496" target="_blank">Hubungi Kami<i class="bi bi-whatsapp"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -288,8 +327,8 @@
 				    Kab. Hulu Sungai Utara (HSU)				</li><br>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-itik-alabio.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-itik-alabio.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>              </div>
             </div>
           </div>
 
@@ -302,8 +341,8 @@
                 <li>Itik mojosari berasal dari desa Modopuro, Kec.Mojosari, Kab. Mojokerto, Jawa Timur merupakan itik lokal petelur unggul yang banyak digemari konsumen.</li><br>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-itik-mojosari.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-itik-mojosari.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>              </div>
             </div>
           </div>
 
@@ -316,8 +355,9 @@
                 <li>Itik PMP merupakan persilangan itik peking dan itik mojosari putih untuk menyediakan permintaan konsumen akan rumpun itik pedaging dengan bobot badan dan tingkat pertumbuhan yang tinggi.</li>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-itik-PMP.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-itik-PMP.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>
+			  </div>
             </div>
           </div>
 
@@ -335,8 +375,9 @@
                 <li>Kambing Peranakan Ettawa berasal dari Kecamatan Kaligesing, disekitar kawasan perbukitan Menoreh, Purworejo - Jawa Tengah.</li><br>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-kambing-pe.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-kambing-pe.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>              
+			  </div>
             </div>
           </div>
 
@@ -349,8 +390,9 @@
                 <li>Sapi Madura adalah bangsa sapi potong lokal asli Indonesia yang terbentuk dari persilangan antara banteng dengan Bos indicus atau sapi Zebu</li><br>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-sapi-madura.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-sapi-madura.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>              
+			  </div>
             </div>
           </div>
 
@@ -363,8 +405,9 @@
                 <li>Hijauan Pakan Ternak adalah hijauan atau rumput-rumputan yang memiliki angka kecukupan gizi yang tepat untuk ternak ruminansia, tidak semua rumput dapat dikategorikan hijauan makanan ternak.</li>
               </ul>
               <div class="btn-wrap">
-                <a href="A" class="btn-buy">Pesan Sekarang</a><br>
-				<a href="/unduhan/brosur-hpt.pdf" style="font-size:12px;color:#FFFFFF"><span>Unduh Brosur</span></a>              </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSckP8YwIx_DvjWuiwfEUwclBT1X-J5Yv0EDvw-QZ_iYdWUp2g/viewform?usp=pp_url" class="btn-buy" target="_blank">Pesan Sekarang</a><br>
+				<a href="unduhan/brosur-hpt.pdf" style="font-size:12px;color:#FFFFFF" target="_blank"><span>Unduh Brosur</span></a>              
+			  </div>
             </div>
           </div>
 
@@ -479,6 +522,7 @@
 		
         <div class="row portfolio-container">
 		
+		 <!-- Awal Publikasi -->
 		 <div class="col-lg-4 col-md-6 portfolio-item filter-artikel">
             <div class="portfolio-wrap">
               <img src="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" class="img-fluid" alt="">
@@ -491,124 +535,37 @@
                   <a href="post-1-pemeliharaan-kambing-muda.html" title="Baca Selengkapnya"><i class="bx bx-link"></i></a>                </div>
               </div>
             </div>
-          </div>
+          </div> <!-- Akhir Publikasi -->
 
+		 <!-- Awal Publikasi -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-berita">
             <div class="portfolio-wrap">
               <img src="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Pemeliharaan Kambing Muda</h4>
+                <p>Berikut tata cara pemeliharaan kambing muda</p>
                 <div class="portfolio-links">
-                  <a href="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Lihat Gambar"><i class="bx bx-plus"></i></a>
-                  <a href="post-1-pemeliharaan-kambing-muda.html" title="Selengkapnya"><i class="bx bx-link"></i></a>                </div>
+				<span style="color:#FFFFFF; font-size:10px; font-style:italic">Selasa, 12 Agustus 2023 - Tim IT</span>
+                  <a href="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="post-1-pemeliharaan-kambing-muda.html" title="Baca Selengkapnya"><i class="bx bx-link"></i></a>                </div>
               </div>
             </div>
-          </div>
+          </div><!-- Akhir Publikasi -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-artikel">
+		 <!-- Awal Publikasi -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-pengumuman">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Pemeliharaan Kambing Muda</h4>
+                <p>Berikut tata cara pemeliharaan kambing muda</p>
                 <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
+				<span style="color:#FFFFFF; font-size:10px; font-style:italic">Selasa, 12 Agustus 2023 - Tim IT</span>
+                  <a href="https://scontent.fbdj4-1.fna.fbcdn.net/v/t1.6435-9/102873851_1135006883531204_6080999433535920643_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sl4y5ftiZjEAX8ofSKe&_nc_oc=AQkL8aFLZBa_L5TZa9tX89vxhTfSHnRWq681HJYG4nXlRAlmp6IljxsZkeCjtC3JNWfAYVEwF3hU8dc2mTWndBH6&_nc_ht=scontent.fbdj4-1.fna&oh=00_AfD57had-wr-Wz9s3s28q00W5JG69Ky1uP0Vobmi2jNHsA&oe=65225590" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="post-1-pemeliharaan-kambing-muda.html" title="Baca Selengkapnya"><i class="bx bx-link"></i></a>                </div>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-berita">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pengumuman">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-artikel">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-berita">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pengumuman">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pengumuman">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-artikel">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>                </div>
-              </div>
-            </div>
-          </div>
+          </div><!-- Akhir Publikasi -->
 
         </div>
 
@@ -855,100 +812,8 @@
     </section><!-- End Clients Section -->
 
    <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">	 
-             <img width="50" src="img/kementan_logo.png" alt="" class="img-fluid">&nbsp;
-			 <img width="90" src="img/pkh_logo.png" alt="" class="img-fluid">&nbsp;
-			 <img width="50" src="img/logo.png" alt="" class="img-fluid">&nbsp;
-			    <br><br><h3 style="color:#6fc02c">BPTUHPT PELAIHARI<br>Kalimantan Selatan</h3>
-				<strong style="color:#FFCC00">Hubungi Kami di:</strong> <br>
-				Kunjungi Sosial Media Kami. Karena kami senang dapat bersilaturahmi dan berkomunikasi dengan anda<br>
-              </p>
-              <div class="social-links mt-3">
-                <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-                <a target="_blank" href="https://www.facebook.com/bptuhptpelaihari/?locale=id_ID" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a target="_blank" href="https://www.instagram.com/bptuhptpelaihari/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/@bptu-hptpelaihari7243" class="youtube" ><i class="bx bxl-youtube"></i></a>
-				<a target="_blank" href="mailto:bptu.kdi@gmail.com" class="whatsapp"><i class="bi bi-envelope-at"></i></a>
-                <a target="_blank" href="https://wa.me/6282272433496" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-		  	<h4 style="color:#6fc02c">JAM LAYANAN</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF9900"><strong>Senin - Kamis </strong></font>
-			  										 <br> 08:00 - 16:00 WITA <br>Istirahat 12:00 - 13:00</a></li>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF9900"><strong>Jumat </strong></font>
-			  										 <br> 08:00 - 16:00 WITA <br>Istirahat 12:00 - 13:30</a></li>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF0000"><strong>Sabtu-Minggu/Hari Libur</strong></font>
-			  									   	 <br> Libur atau sesuai perjanjian</a></li>
-            </ul>
-			<br>
-            <h4 style="color:#6fc02c">SERTIFIKASI</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a>ISO 9001:2015</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a>ISO 37001:2016</a></li>
-            </ul>
-			<br>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-		  <h4 style="color:#6fc02c"><i class="bx bxl-link"></i> TAUTAN TERKAIT</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://pertanian.go.id">Kementerian Pertanian</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://ditjenpkh.pertanian.go.id">Ditjen Peternakan & Keswan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://bptupelaihari-ppid.pertanian.go.id">Portal PPID</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://lpse.pertanian.go.id/eproc4">LPSE Kementan</a></li>
-			  <li><i class="bx bx-chevron-right"></i> <a href="https://www.isikhnas.com">ISHIKNAS</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.pertanian.go.id/wbs/">Wistleblower's System</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.lapor.go.id/">Lapor</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://ditjenpkh.pertanian.go.id/profil/10-satker-upt">UPT Ditjen PKH</a></li>
-              
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 style="color:#6fc02c">| ALAMAT KANTOR :</h4>
-            <p>
-                Jln. A.Yani Km.51 Pelaihari <br>
-                Ds.Sungai Jelai Kec.Tambang Ulang<br>
-				Kab.Tanah Laut - Kalimantan Selatan<br>
-			<p><i class="bi bi-phone"></i> (0512) 2028965 &nbsp;&nbsp;&nbsp;
-				<i class="bi bi-whatsapp"></i> 082272433496<br>
-				<i class="bi bi-envelope-at"> bptu.kdi@gmail.com</i></p><br>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5086148388395!2d114.73087037458944!3d-3.6985312430201334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6f2b4951d5131%3A0xba52a7b281d84de2!2sBalai%20Pembibitan%20Ternak%20Unggul%20dan%20Hijauan%20Pakan%20Ternak%20Pelaihari!5e0!3m2!1sid!2sid!4v1692965239927!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!--<form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>-->
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Semua Hak dilindungi - <strong><span>BPTU-HPT Pelaihari</span> </strong>| Dikelola Oleh Tim<strong><font style="color:#FF9900";font-weight="bold">.IT</font></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
-        Didesain oleh <a href="https://bootstrapmade.com/">BootstrapMade</a> Dikembangkan oleh <a title="Tanto Suhanda">Mctantosh</a> 
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
+  <div id="footer"></div>
+  
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
@@ -961,7 +826,24 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+  $("#menu").load("menu.html");
+  $("#footer").load("footer.html");
+  </script>
+  
+  <!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
 
+	<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
+	<A HREF="http://dynamicdrive.com"><img src="img/logo.png" BORDER=0 width="70"></a>
+	</DIV>
+	
+	<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
+	<A HREF="http://dynamicdrive.com"><img src="img/kementan_logo.png" BORDER=0 width="70"></a>
+	</DIV>
+	
+	<DIV ID="flyimage3" STYLE="position:absolute; left: -500px; width:47; height:68;">
+	<A HREF="http://dynamicdrive.com"><img src="img/pkh_logo.png" BORDER=0 width="70"></a>
+	</DIV>
 </body>
 
 </html>
