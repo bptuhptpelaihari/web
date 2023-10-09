@@ -887,7 +887,7 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  max-height:250px;
+  height:250px;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
