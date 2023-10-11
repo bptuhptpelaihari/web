@@ -2,21 +2,24 @@
 <html lang="id">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BPTUHPT PELAIHARI</title>
-  <meta content="" name="description">
-   <meta content="itik,itik alabio,itik mojosari,itik pmp,itik peking,kambing,kambing pe,kambing peranakan etawa,kambing etawa, 
-  sapi,sapi madura,hpt,hijauan pakan ternak, rumput,rumput odot,rumput kinggrass, rumput tetangga,gamal,indigofera,bptu,bptu-hpt,bptu-hpt pelaihari,
-  pelaihari,bptu pelaihari,balai pembibitan ternak unggul dan hijauan pakan ternak,balai pembibitan ternak unggul dan hijauan pakan ternak pelaihari" name="keywords">
-  <script src="https://cdn.userway.org/widget.js" data-account="sSAr2fdtdR"></script>
-  <!-- Favicons -->
+<title>BPTUHPT PELAIHARI</title>
+<meta content="" name="description">
+<meta content="itik,itik alabio,itik mojosari,itik pmp,itik peking,kambing,kambing pe,kambing peranakan etawa,kambing etawa, 
+sapi,sapi madura,hpt,hijauan pakan ternak, rumput,rumput odot,rumput kinggrass, rumput tetangga,gamal,indigofera,bptu,bptu-hpt,bptu-hpt pelaihari,
+pelaihari,bptu pelaihari,balai pembibitan ternak unggul dan hijauan pakan ternak,balai pembibitan ternak unggul dan hijauan pakan ternak pelaihari" name="keywords">
+
+<!--Accessibility User Way-->
+<script src="https://cdn.userway.org/widget.js" data-account="sSAr2fdtdR"></script>
+  
+<!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -28,205 +31,59 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <!-- Template Flying Object --> 
+<script type="text/javascript" src="http://www.dynamicdrive.com/dynamicindex4/moveobj.js"> </script>
+<script type="text/javascript">
 
-  <!-- =======================================================
-  * Template Name: Groovin
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+}
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+</script>
+
+<!-- Get another page-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script> 
+$(function(){
+	$("#headDiv").load("00-head.html");
+	$("#faqDiv").load("00-faq.html");
+	$("#countDiv").load("00-count.html");
+	$("#clientDiv").load("00-client.html");
+	$("#headerDiv").load("00-header.html");
+	$("#footerDiv").load("00-footer.html");
+});  
+</script>
+<div id="headerDiv"></div>
 </head>
 
 <body>
 
- <!-- ======= Header ======= -->
-<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo"><a href="index.html" class="logo"><img src="img/logo-text.png" alt="" class="img-fluid">  
-	  </a></div>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
+<!-- GET HEADER SECTION -->
+<div id="headerDiv"></div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <!--<li><a class="nav-link scrollto active" href="#hero"><i class="bi bi-house-heart-fill" style="font-size:24px"></i></a></li>-->
-		  <li><a class="nav-link scrollto" href="index.html"><i class="bi bi-house-heart-fill" style="font-size:24px"></i></a></li>
-		  <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="sejarah.html">Sejarah Singkat</a></li>
-              <li><a href="visi-misi.html">Visi dan Misi</a></li>
-              <li><a href="tupoksi.html">Tugas dan Fungsi</a></li>
-			  <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
-			  <li><a href="profil-pegawai.html">Profil Pegawai</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="produk.html">Layanan Penjualan</a></li>
-              <li><a href="layanan.html">Layanan Masyarakat</a></li>
-			  <li><a href="waktu-layanan.html">Waktu Layanan</a></li>
-			  <li><hr></li>
-			  <li><a href="maklumat.html">Kebijakan Mutu <br> Maklumat Pelayanan <br> Janji Layanan</a></li>
-			  <li><hr></li>
-			  <li><a href="aplikasi.html">Sistem Pemerintahan<br>Berbasis Elektonik</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><a href="#"><span>Informasi Publik</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="publikasi-terkini.html">Publikasi Terkini</a></li>
-			  <li><a href="https://sirup.lkpp.go.id/sirup/home/penyediasatker?idSatker=5536" target="_blank">Rencana Umum Pengadaan</a></li>
-			  <li><hr></li>
-              <li><a href="https://jdih.pertanian.go.id/fp/peraturan" target="_blank">Peraturan Menteri Pertanian</a></li>
-              <li><a href="tarif-PNBP.html">Tarif PNBP</a></li>
-			  <li><a href="https://casn.pertanian.go.id/" target="_blank">Rekrutmen Pegawai</a></li>
-			  <li style="background-color:#E5E5E5"><a href="https://bptupelaihari-ppid.pertanian.go.id"><Strong style="color:#009900"> - Portal PPID >></Strong></a></li>
-			  <li class="dropdown"><a><span>Layanan Informasi</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank">Registrasi Pemohon</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/login" target="_blank">Permohonan Informasi</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/rekapitulasi" target="_blank">Statistik/Rekapitulasi</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/ppid_tahunan" target="_blank">Laporan Layanan Informasi Publik Tahunan</a></li>
-                </ul>
-              </li>
-			  <li class="dropdown"><a><span>Standar Layanan</span><i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/tata_cara" target="_blank">Tata Cara Permohonan Informasi</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/mekanisme_keberatan" target="_blank">Mekanisme Keberatan</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/mekanisme_sengketa" target="_blank">Mekanisme Permohonan Penyelesaian Sengketa</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/waktu_pelayanan" target="_blank">Waktu Pelayanan</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/standar_biaya" target="_blank">Standar Biaya Pelayanan</a></li>
-				  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/maklumat" target="_blank">Maklumat Pelayanan</a></li>
-                </ul>
-              </li>
-			  <li class="dropdown"><a><span>Informasi Publik</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="kinerja.html" target="_blank">Transparansi Kinerja</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/ip_berkala" target="_blank">Berkala</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/ip_serta_merta" target="_blank">Serta merta</a></li>
-                  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/ip_setiap_saat" target="_blank">Setiap Saat</a></li>
-                </ul>
-              </li>
-			  <li><a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/portal/regulasi" target="_blank">Regulasi</a></li>
-            </ul>
-          </li>
-		  <!--<li><a class="nav-link scrollto" href="aplikasi.html"><strong class="bi bi-amd">-plikasi</strong></a></li>-->
-		  <li class="dropdown"><a href="#"><span>Siap<strong style="color:#FF6600">.Siaga</strong></span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="https://covid19.go.id/id/situasi" target="_blank">Siaga Covid-19</a></li>
-              <li><a href="https://siagapmk.crisis-center.id/" target="_blank">Siaga PMK</a></li>
-			  <li><a href="unduhan/SOP-Evakuasi.pdf" target="_blank">Prosedur Evakuasi<br>Keadaan Darurat</a></li>
-            </ul>
-          </li>
-          <li><a class="getstarted scrollto" href="#footer" target="_blank">Kontak<i class="bi bi-whatsapp"></i></a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-	  <!-- .navbar -->
-	  
-    </div>
-	<!-- Translation -->
-	<div class="gtranslate_wrapper"></div>
-	<script>window.gtranslateSettings = {"default_language":"id","native_language_names":true,"detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper",	"flag_style":"3d"}</script>
-	<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script></li>
-    </ul>
-    <div id='google_translate_element' style="font-size:8pt"/> <!-- End Translation -->
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container">
-      <div id="heroCarousel" data-bs-interval="4000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-        <div class="carousel-inner" role="listbox">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(img/slide/slide-1.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-			    <h2 class="animate__animated animate__fadeInDown"><img width="100" src="img/logo.png" alt="" class="img-fluid"></h2>
-				<h1 class="animate__animated animate__fadeInDown">Selamat Datang | Welcome To</h1>
-                <h2 class="animate__animated animate__fadeInDown">BPTU-HPT PELAIHARI</h2>
-                <p class="animate__animated animate__fadeInUp">Balai Pembibitan Ternak Unggul dan Hijauan Pakan Ternak Pelaihari -
-				Direktorat Jenderal Peternakan dan Kesehatan Hewan - Kementerian Pertanian				</p>
-                <div>
-                  <a href="" class="btn-get-started animate__animated animate__fadeInUp scrollto">Maju | Mandiri | Modern</a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url(img/slide/slide-2.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <!--<h2 class="animate__animated animate__fadeInDown">Judul 3</h2>
-                <p class="animate__animated animate__fadeInUp">Keterangan</p>
-                <div>
-                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
-                </div>-->
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url(img/slide/slide-3.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><img width="100" src="img/logo.png" alt="" class="img-fluid"></h2>
-				<h1 class="animate__animated animate__fadeInDown">Selamat Datang | Welcome To</h1>
-                <h2 class="animate__animated animate__fadeInDown">BPTU-HPT PELAIHARI</h2>
-                <p class="animate__animated animate__fadeInUp">Balai Pembibitan Ternak Unggul dan Hijauan Pakan Ternak Pelaihari -
-				Direktorat Jenderal Peternakan dan Kesehatan Hewan - Kementerian Pertanian				</p>
-                <div>
-                  <a href="" class="btn-get-started animate__animated animate__fadeInUp scrollto">Maju | Mandiri | Modern</a>                </div>
-              </div>
-            </div>
-          </div>
-		  <!-- Slide 4 -->
-          <div class="carousel-item" style="background-image: url(img/slide/slide-4.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><img width="100" src="img/logo.png" alt="" class="img-fluid"></h2>
-				<h1 class="animate__animated animate__fadeInDown">Selamat Datang | Welcome To</h1>
-                <h2 class="animate__animated animate__fadeInDown">BPTU-HPT PELAIHARI</h2>
-                <p class="animate__animated animate__fadeInUp">Balai Pembibitan Ternak Unggul dan Hijauan Pakan Ternak Pelaihari -
-				Direktorat Jenderal Peternakan dan Kesehatan Hewan - Kementerian Pertanian				</p>
-                <div>
-                  <a href="" class="btn-get-started animate__animated animate__fadeInUp scrollto">Maju | Mandiri | Modern</a>                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel-item" style="background-image: url(img/slide/slide-5.jpg);">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><img width="100" src="img/logo.png" alt="" class="img-fluid"></h2>
-				<h1 class="animate__animated animate__fadeInDown">Selamat Datang | Welcome To</h1>
-                <h2 class="animate__animated animate__fadeInDown">BPTU-HPT PELAIHARI</h2>
-                <p class="animate__animated animate__fadeInUp">Balai Pembibitan Ternak Unggul dan Hijauan Pakan Ternak Pelaihari -
-				Direktorat Jenderal Peternakan dan Kesehatan Hewan - Kementerian Pertanian				</p>
-                <div>
-                  <a href="" class="btn-get-started animate__animated animate__fadeInUp scrollto">Maju | Mandiri | Modern</a>                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
-      </div>
-    </div>
-  </section><!-- End Hero -->
   <main id="main">
 		
 	<!-- ======= Pricing Section ======= -->
@@ -260,10 +117,10 @@
        <h6>DIPA <span>(Daftar Isian Pelaksanaan Anggaran)</span></h6> 
 	   <p align="justify">Daftar Isian Pelaksanaan Anggaran yang selanjutnya disingkat DIPA adalah dokumen pelaksanaan anggaran yang disusun 
 	   oleh Pengguna Anggaran/Kuasa Pengguna Anggaran.</p>
-	   <a href="unduhan/DIPA-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/DIPA-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/DIPA-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/DIPA-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>		   
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>		   
       </div>
     </div>
   </div>
@@ -279,10 +136,10 @@
       <div class="accordion-body">
         <h6>RENSTRA  <span>(Rencana Strategis)</span></h6> 
 	   <p align="justify">Rencana Strategis (Renstra) adalah dokumen perencanaan suatu organisasi yang berorientasi pada hasil yang ingin dicapai dan di dalamnya dijelaskan mengenai strategi atau arahan sebagai dasar dalam mengambil keputusan. Periode renstra biasanya adalah 5 tahun, yang merupakan penjabaran dari Rencana Pembangunan Jangka Menengah Nasional (RPJMN).</p>
-	   <a href="unduhan/RENSTRA-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/RENSTRA-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/RENSTRA-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/RENSTRA-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
       </div>
     </div>
   </div>
@@ -298,10 +155,10 @@
       <div class="accordion-body">
         <h6>RKT  <span>(Rencana Kerja Tahunan)</span></h6> 
 	   <p align="justify">Rencana kinerja tahunan (RKT) merupakan penjabaran dari sasaran dan program yang telah ditetapkan dalam Renstra, dan akan dilaksanakan oleh satuan organisasi/kerja melalui berbagai kegiatan tahunan. Penyusunan RKT dilakukan seiring dengan agenda penyusunan program dan kebijakan anggaran oleh pimpinan satuan organisasi/ kerja yang akan dicapai pada tahun berjalan.</p>
-	   <a href="unduhan/RKT-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/RKT-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/RKT-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/RKT-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
       </div>
     </div>
   </div>
@@ -317,10 +174,10 @@
       <div class="accordion-body">
         <h6>LAKIN  <span>(Laporan Kinerja)</span></h6> 
 	   <p align="justify">Laporan Kinerja merupakan bentuk akuntabilitas dari pelaksanaan tugas dan fungsi yang dipercayakan kepada Instansi Pemerintah atas penggunaan anggaran dan atau merupakan bentuk akuntabilitas dari setiap tugas dan fungsi yang dipercayakan oleh atasan kepada bawahan sebagaimana tertuang dalam dokumen perjanjian kinerja yang telah disepakati.</p>
-	   <a href="unduhan/LAKIN-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/LAKIN-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/LAKIN-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/LAKIN-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>	
       </div>
     </div>
   </div>
@@ -336,10 +193,10 @@
       <div class="accordion-body">
         <h6>Capaian Kinerja</h6> 
 	   <p align="justify">Capaian Kinerja seringkali diasosiasikan dengan tolak ukur keberhasilan suatu perusahaan/ organisasi. Setiap perusahaan/ organisasi tentunya berlomba-lomba meningkatkan kinerjanya untuk dapat mencapai target yang optimal. Dalam manajemen kinerja, terdapat empat  siklus yang dapat dilakukan secara berkelanjutan, salah satunya adalah Monitoring dan Evaluasi. Umumnya, Monitoring dan Evaluasi dilaksanakan dalam sebuah rapat rutin yang diadakan secara periodik.</p>
-	   <a href="unduhan/Capaian-Kinerja-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/Capaian-Kinerja-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/Capaian-Kinerja-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/Capaian-Kinerja-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>
       </div>
     </div>
   </div>
@@ -355,10 +212,10 @@
       <div class="accordion-body">
         <h6>Laporan Keuangan</h6> 
 	   <p align="justify">Laporan Keuangan Pemerintah Pusat (LKPP) adalah laporan pertanggungjawaban pelaksanaan Anggaran Pendapatan dan Belanja Negara yang terdiri dari Laporan Realisasi Anggaran (LRA), Neraca, Laporan Arus Kas (LAK), dan Catatan atas Laporan Keuangan (CaLK) yang disusun sesuai dengan Standar Akuntansi Pemerintahan (SAP).</p>
-	   <a href="unduhan/LK-2023.pdf" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
-	   <a href="unduhan/LK-2022.pdf" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
-	   <a href="unduhan/LK-2021.pdf" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
-	   <a href="unduhan/LK-2020.pdf" target="_blank"><button type="button" class="btn btn-light">2020</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-success">2023</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2022</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2021</button></a>
+	   <a href="https://bptupelaihari-ppid.pertanian.go.id/index.php/user/register/portal" target="_blank"><button type="button" class="btn btn-light">2020</button></a>
       </div>
     </div>
   </div>
@@ -370,173 +227,21 @@
 		  
         </div>
 
-
-  </main><!-- End #main -->
+</main><!-- End #main -->
   
   
 
-   <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
+<!-- GET FAQ SECTION -->
+<div id="faqDiv"></div>
 
-        <div class="row">
+<!-- GET CLIENT SECTION -->
+<div id="countDiv"></div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-		  	<a href="https://www.menpan.go.id/site/tentang-kami/tentang-kami/fondasi-baru-bagi-aparatur-sipil-negara-asn" target="_blank">
-            <img src="img/logo/Logo_BerAKHLAK.png" class="img-fluid" alt=""></a>
-          </div>
+<!-- GET CLIENT SECTION -->
+<div id="clientDiv"></div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-		 	<a href="https://bptupelaihari-ppid.pertanian.go.id/" target="_blank">
-            <img src="img/logo/Logo PPID.png" class="img-fluid" alt=""></a>
-          </div>
+<!-- GET FOOTER SECTION -->
+<div id="footerDiv"></div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="img/logo/logo-lapor.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-			<a href="https://www.isikhnas.com/" target="_blank">
-            <img src="img/logo/Ishiknas_logo.png" class="img-fluid" alt=""></a>
-          </div>
-
-           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-		    <a href="https://lpse.pertanian.go.id/eproc4" target="_blank">
-            <img src="img/logo/lpse_logo.png" class="img-fluid" alt=""></a>
-          </div>
-		  
-		  <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-		    <a href="https://www.pertanian.go.id/wbs/" target="_blank">
-            <img src="img/logo/WBS_Logo.png" class="img-fluid" alt=""></a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Clients Section -->
-
-    <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">	 
-             <img width="50" src="img/kementan_logo.png" alt="" class="img-fluid">&nbsp;
-			 <img width="90" src="img/pkh_logo.png" alt="" class="img-fluid">&nbsp;
-			 <img width="50" src="img/logo.png" alt="" class="img-fluid">&nbsp;
-			    <br><br><h3 style="color:#6fc02c">BPTUHPT PELAIHARI<br>Kalimantan Selatan</h3>
-				<strong style="color:#FFCC00">Hubungi Kami di:</strong> <br>
-				Kunjungi Sosial Media Kami. Karena kami senang dapat bersilaturahmi dan berkomunikasi dengan anda<br>
-              </p>
-              <div class="social-links mt-3">
-                <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-				<a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>-->
-                <a target="_blank" href="https://www.facebook.com/bptuhptpelaihari/?locale=id_ID" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a target="_blank" href="https://www.instagram.com/bptuhptpelaihari/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a target="_blank" href="https://www.youtube.com/@bptu-hptpelaihari7243" class="youtube" ><i class="bx bxl-youtube"></i></a>
-				<a target="_blank" href="mailto:bptu.kdi@gmail.com" class="whatsapp"><i class="bi bi-envelope-at"></i></a>
-                <a target="_blank" href="https://wa.me/6282272433496" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-		  	<h4 style="color:#6fc02c">WAKTU LAYANAN</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF9900"><strong>Senin - Kamis </strong></font>
-			  										 <br> 08:00 - 16:00 WITA <br>Istirahat 12:00 - 13:00</a></li>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF9900"><strong>Jumat </strong></font>
-			  										 <br> 08:00 - 16:00 WITA <br>Istirahat 12:00 - 13:30</a></li>
-              <li><i class="bx bx-chevron-right"></i><a><font color="#FF0000"><strong>Sabtu-Minggu/Hari Libur</strong></font>
-			  									   	 <br> Libur atau sesuai perjanjian</a></li>
-            </ul>
-			<br>
-            <h4 style="color:#6fc02c">SERTIFIKASI</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a>ISO 9001:2015</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a>ISO 37001:2016</a></li>
-            </ul>
-			<br>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-		  <h4 style="color:#6fc02c"><i class="bx bxl-link"></i> TAUTAN TERKAIT</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://pertanian.go.id">Kementerian Pertanian</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://ditjenpkh.pertanian.go.id">Ditjen Peternakan & Keswan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://bptupelaihari-ppid.pertanian.go.id">Portal PPID</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://lpse.pertanian.go.id/eproc4">LPSE Kementan</a></li>
-			  <li><i class="bx bx-chevron-right"></i> <a href="https://www.isikhnas.com">ISHIKNAS</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.pertanian.go.id/wbs/">Wistleblower's System</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.lapor.go.id/">Lapor</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://ditjenpkh.pertanian.go.id/profil/10-satker-upt">UPT Ditjen PKH</a></li>
-              
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4 style="color:#6fc02c">| ALAMAT KANTOR :</h4>
-            <p>
-                Jln. A.Yani Km.51 Pelaihari <br>
-                Ds.Sungai Jelai Kec.Tambang Ulang<br>
-				Kab.Tanah Laut - Kalimantan Selatan<br>
-			<p><i class="bi bi-phone"></i> (0512) 2028965 &nbsp;&nbsp;&nbsp;
-				<i class="bi bi-whatsapp"></i> 082272433496<br>
-				<i class="bi bi-envelope-at"> bptuhptpelaihari@pertanian.go.id</i><br>
-				<i class="bi bi-envelope-at"> bptu.kdi@gmail.com</i></p><br>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.5086148388395!2d114.73087037458944!3d-3.6985312430201334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de6f2b4951d5131%3A0xba52a7b281d84de2!2sBalai%20Pembibitan%20Ternak%20Unggul%20dan%20Hijauan%20Pakan%20Ternak%20Pelaihari!5e0!3m2!1sid!2sid!4v1692965239927!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <!--<form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>-->
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Semua Hak dilindungi - <strong><span>BPTU-HPT Pelaihari</span> </strong>| Dikelola Oleh Tim<strong><font style="color:#FF9900";font-weight="bold">.IT</font></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
-        Didesain oleh <a href="https://bootstrapmade.com/">BootstrapMade</a> Dikembangkan oleh <a title="Tanto Suhanda">Mctantosh</a> 
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-  
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
- 
-  
-  <!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
-
-	<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
-	<A HREF="http://dynamicdrive.com"><img src="img/logo.png" BORDER=0 width="70"></a>
-	</DIV>
-	
-	<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
-	<A HREF="http://dynamicdrive.com"><img src="img/kementan_logo.png" BORDER=0 width="70"></a>
-	</DIV>
-	
-	<DIV ID="flyimage3" STYLE="position:absolute; left: -500px; width:47; height:68;">
-	<A HREF="http://dynamicdrive.com"><img src="img/pkh_logo.png" BORDER=0 width="70"></a>
-	</DIV>
 </body>
-
 </html>
